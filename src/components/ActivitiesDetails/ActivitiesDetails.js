@@ -8,10 +8,14 @@ const ActivitiesDetails = () => {
         .then(res=>res.json())
         .then(data=>setActivities(data))
     },[])
+    const handleAddToActivities=(activity)=>{
+        console.log('its clicked',activity)
+    }
     return (
         
         <div>
-            <h2>Study Activities</h2>
+            <h2 className='banner'>Study Activities</h2>
+            <h5 className='banner'>Select today's subject</h5>
             <div className='activity-with-info-container'>
             
             <div className="activity-container">
@@ -19,7 +23,8 @@ const ActivitiesDetails = () => {
                 {
                     activities.map(activity=><Activity
                          key={activity.id}
-                         activity={activity} ></Activity>)
+                         activity={activity}
+                         handleAddToActivities={handleAddToActivities} ></Activity>)
                 }
             </div>
             <div className="information-container">
