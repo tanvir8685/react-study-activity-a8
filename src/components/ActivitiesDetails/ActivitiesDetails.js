@@ -3,6 +3,7 @@ import { faCoffee ,faGraduationCap} from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import './ActivitiesDetails.css'
+import Information from '../Information/Information';
 const ActivitiesDetails = () => {
     const[activities,setActivities]=useState([]);
     const[information,setInformation]=useState([]);
@@ -22,10 +23,10 @@ const ActivitiesDetails = () => {
     return (
         
         <div>
-           {/* <div className='icon banner'> */}
+           
            
             <h2  className='banner'>  <FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon>  Study Activities</h2>
-           {/* </div> */}
+           
             <h5 className='banner'>Select today's subject</h5>
             <div className='activity-with-info-container'>
             
@@ -39,10 +40,7 @@ const ActivitiesDetails = () => {
                 }
             </div>
             <div className="information-container">
-                <h2>This is for information{information.length}</h2>
-                {
-                    console.log(information)
-                }
+                <Information information={information}></Information>
 
             </div>
         </div>
