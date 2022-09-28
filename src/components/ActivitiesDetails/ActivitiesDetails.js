@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee ,faGraduationCap} from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import './ActivitiesDetails.css'
@@ -20,7 +22,10 @@ const ActivitiesDetails = () => {
     return (
         
         <div>
-            <h2 className='banner'>Study Activities</h2>
+           {/* <div className='icon banner'> */}
+           
+            <h2  className='banner'>  <FontAwesomeIcon icon={faGraduationCap}></FontAwesomeIcon>  Study Activities</h2>
+           {/* </div> */}
             <h5 className='banner'>Select today's subject</h5>
             <div className='activity-with-info-container'>
             
