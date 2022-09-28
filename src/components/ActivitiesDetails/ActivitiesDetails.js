@@ -9,9 +9,13 @@ const ActivitiesDetails = () => {
         .then(data=>setActivities(data))
     },[])
     return (
-        <div className='activity-with-info-container'>
+        
+        <div>
+            <h2>Study Activities</h2>
+            <div className='activity-with-info-container'>
+            
             <div className="activity-container">
-                <h2>Study Activites</h2>
+                
                 {
                     activities.map(activity=><Activity
                          key={activity.id}
@@ -22,6 +26,7 @@ const ActivitiesDetails = () => {
                 <h2>This is for information</h2>
 
             </div>
+        </div>
         </div>
     );
 };

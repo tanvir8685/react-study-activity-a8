@@ -1,10 +1,15 @@
 import React from 'react';
+import './Activity.css'
 
 const Activity = ({activity}) => {
     const{name,id,time,img}=activity;
     return (
-        <div>
-            <h2>This is activity  {name}</h2>
+        <div className='activity'>
+            <img src={img} alt="" />
+            <p>Name: {name}</p>
+            <p>Time: {time} min</p>
+            <button>Add to List</button>
+
         </div>
     );
 };
