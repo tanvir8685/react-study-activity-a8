@@ -14,7 +14,7 @@ const ActivitiesDetails = () => {
         .then(data=>setActivities(data))
     },[])
     const handleAddToActivities=(activity)=>{
-        console.log('its clicked',activity)
+        
         const newInformation=[...information,activity];
         setInformation(newInformation);
         

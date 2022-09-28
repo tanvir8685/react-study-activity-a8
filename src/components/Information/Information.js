@@ -1,12 +1,17 @@
 import React from 'react';
+import './Information.css'
 
 const Information = ({information}) => {
+    console.log(information)
+    let total=0;
+    for(const info of information){
+        total=total+info.time;
+    }
     return (
-        <div>
+        <div className='information'>
             <h2>This is for information{information.length}</h2>
-                {
-                    console.log(information)
-                }
+            <p>time:{total}</p>
+                
             
         </div>
     );
