@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import './ActivitiesDetails.css'
 const ActivitiesDetails = () => {
-    const[activities,setActivities]=useState([])
+    const[activities,setActivities]=useState([]);
+    const[information,setInformation]=useState([]);
+
     useEffect(()=>{
         fetch('activities.json')
         .then(res=>res.json())
@@ -10,6 +12,10 @@ const ActivitiesDetails = () => {
     },[])
     const handleAddToActivities=(activity)=>{
         console.log('its clicked',activity)
+        const newInformation=[...information,activity];
+        setInformation(newInformation);
+        
+
     }
     return (
         
@@ -28,7 +34,10 @@ const ActivitiesDetails = () => {
                 }
             </div>
             <div className="information-container">
-                <h2>This is for information</h2>
+                <h2>This is for information{information.length}</h2>
+                {
+                    console.log(information)
+                }
 
             </div>
         </div>
