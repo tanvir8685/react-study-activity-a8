@@ -1,10 +1,15 @@
 
 import './App.css';
+import ActivitiesDetails from './components/ActivitiesDetails/ActivitiesDetails';
+
 
 function App() {
   return (
-    <div className="App">
-      
+    <div>
+
+      <ActivitiesDetails></ActivitiesDetails>
+
+     
     </div>
   );
 }
