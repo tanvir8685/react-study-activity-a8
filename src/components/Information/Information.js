@@ -3,6 +3,7 @@ import './Information.css'
 
 const Information = ({information}) => {
     console.log(information)
+    
     let total=0;
     for(const info of information){
         total=total+info.time;

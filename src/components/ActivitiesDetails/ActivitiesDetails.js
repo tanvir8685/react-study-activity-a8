@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee ,faGraduationCap} from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap} from '@fortawesome/free-solid-svg-icons'
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import './ActivitiesDetails.css'

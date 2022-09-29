@@ -2,7 +2,7 @@ import React from 'react';
 import './Activity.css'
 
 const Activity = ({activity,handleAddToActivities}) => {
-    const{name,id,time,img}=activity;
+    const{name,time,img}=activity;
     return (
         <div className='activity'>
             <img src={img} alt="" />

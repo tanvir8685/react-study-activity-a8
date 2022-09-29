@@ -11,8 +11,16 @@
     gap: 20px;
     padding: 20px;
 }
-/* .icon{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-} */
+@media screen and (max-width:576px){
+    
+        
+    .activity-with-info-container{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    
+    .activity-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+}                                                                                                                                                                                                                                                                                                                
