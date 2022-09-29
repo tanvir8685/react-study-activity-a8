@@ -19,7 +19,7 @@ const Information = ({information}) => {
             <p>Bsc:2022</p><br /><br />
             <h3>Add a bread------------</h3><br /><br />
             <h2>Subject Details</h2>
-            <h3>Study Time:{total}</h3>
+            <h3>Study Time:{total} min</h3>
             <h3>Break time:</h3>
 
 
